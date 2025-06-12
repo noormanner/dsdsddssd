@@ -1,0 +1,22 @@
+name: Wi
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Star
+    runs-on: windows-latest
+    timeout-minutes: 9999
+    
+    steps:
+      - name: Downloa
+        run: |
+          Invoke-WebRequest -Uri "https://gitlab.com/chamod12/lm_win-10_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
+          cmd /c Downloads.bat
+
+      - name: Conn
+        run: cmd /c show.bat
+
+      - name: Time
+        run: cmd /c loop.bat
